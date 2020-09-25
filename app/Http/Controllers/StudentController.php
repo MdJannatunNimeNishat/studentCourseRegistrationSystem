@@ -16,7 +16,7 @@ class StudentController extends Controller
     {
         $student = Student::all();
 
-           // $class = DB::table('students')->get();
+           
              return response()->json($student);
 
     }
@@ -49,7 +49,7 @@ class StudentController extends Controller
         $student->student_name = $request->student_name;
         $student->save();
         return response()->json('inserted');
-        //return response('done');
+        
     }
 
     /**
