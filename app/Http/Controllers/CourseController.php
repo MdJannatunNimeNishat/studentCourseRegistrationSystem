@@ -16,7 +16,7 @@ class CourseController extends Controller
     {
         $coures = Course::all();
 
-           // $class = DB::table('students')->get();
+         
              return response()->json($coures);
     }
 
